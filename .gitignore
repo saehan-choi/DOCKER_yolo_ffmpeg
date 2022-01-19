@@ -1,0 +1,5 @@
+templates/
+static/
+PyTorch_YOLOv4/
+FFmpeg/
+__pycache__/
