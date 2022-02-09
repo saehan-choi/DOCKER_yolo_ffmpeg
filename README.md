@@ -121,5 +121,7 @@ ffmpeg -i myvideo.avi -vf fps=1/60 img%03d.jpg
 
 
 ----------------------------docker에서 gpu사용하기----------------------------------------
+
 docker run --gpus all -i -t  --name final -v C:/docker:/docker holy:v
+
 ----------------------------docker에서 gpu사용하기----------------------------------------
