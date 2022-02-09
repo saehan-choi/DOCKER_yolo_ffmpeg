@@ -117,3 +117,9 @@ python3 test.py --img 640 --conf 0.001 --batch 8 --device 'cpu' --data /images/a
 
 
 ffmpeg -i myvideo.avi -vf fps=1/60 img%03d.jpg
+
+
+
+----------------------------------------docker에서 gpu사용하기-------------------------------------------------------
+docker run --gpus all -i -t  --name final -v C:/docker:/docker holy:v
+----------------------------------------docker에서 gpu사용하기-------------------------------------------------------
