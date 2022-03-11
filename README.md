@@ -125,3 +125,11 @@ ffmpeg -i myvideo.avi -vf fps=1/60 img%03d.jpg
 docker run --gpus all -i -t  --name final -v C:/docker:/docker holy:v
 
 ----------------------------docker에서 gpu사용하기----------------------------------------
+
+
+
+------------------docker에서 gpu사용하고 메모리 16G 공유하기-------------------------------
+
+docker run --gpus all -i -t  --name ti_test --shm-size=16G -v C:/tinaface/vedadet:/vedadet tinaface:ti
+
+------------------docker에서 gpu사용하고 메모리 16G 공유하기-------------------------------
