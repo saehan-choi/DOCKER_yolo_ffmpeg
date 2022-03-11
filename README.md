@@ -129,6 +129,7 @@ docker run --gpus all -i -t  --name final -v C:/docker:/docker holy:v
 
 
 ------------------docker에서 gpu사용하고 메모리 16G 공유하기-------------------------------
+(이렇게 안하면 나중에 docker 안에서 학습시킬때 메모리부족뜸)
 
 docker run --gpus all -i -t  --name ti_test --shm-size=16G -v C:/tinaface/vedadet:/vedadet tinaface:ti
 
