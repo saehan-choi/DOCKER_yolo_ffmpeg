@@ -141,5 +141,8 @@ docker run --gpus all -i -t  --name ti_test --shm-size=16G -v C:/tinaface/vedade
 docker run -it --gpus all -v /tmp/.X11-unix:/tmp/.X11-unix -v C:/tinaface/vedadet:/vedadet --shm-size=16G -e DISPLAY=unix$DISPLAY --name ti_final tinaface:final
 ( 공유볼륨을 두개하고 싶을때 단순히 두번 불러주면 됨. )
 ( 현재는 컨테이너->이미지 변경 후 테스트 중 )
+docker run -it --gpus all -v /tmp/.X11-unix:/tmp/.X11-unix -v C:/tinaface/vedadet:/vedadet --shm-size=16G -e DISPLAY=$DISPLAY --name ti_final tinaface:final
+(에러계속뜸 XHOST 하는데일단계속진행)
+
 
 ------------------docker에서 GUI program띄우기 ------------------------------------------
