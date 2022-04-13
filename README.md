@@ -143,6 +143,6 @@ docker run -it --gpus all -v /tmp/.X11-unix:/tmp/.X11-unix -v C:/tinaface/vedade
 ( 현재는 컨테이너->이미지 변경 후 테스트 중 )
 docker run -it --gpus all -v /tmp/.X11-unix:/tmp/.X11-unix -v C:/tinaface/vedadet:/vedadet --shm-size=16G -e DISPLAY=$DISPLAY --name ti_final tinaface:final
 (에러계속뜸 XHOST 하는데일단계속진행)
-
+-> xhost error 실패 "docker에서 gpu사용하고 메모리 16G 공유하기" -> 이거 계속하다가 실패함 다음 할 기회에 다시 테스트
 
 ------------------docker에서 GUI program띄우기 ------------------------------------------
